@@ -54,6 +54,7 @@ group :development do
   gem 'capistrano-bundler' # for capistrano/bundler
   gem 'capistrano-rails'
   gem 'capistrano-rvm'
+  gem 'capistrano-thin'
   # gem 'capistrano-ext'
   # gem 'capistrano-sidekiq'
   # gem 'rvm-capistrano'
