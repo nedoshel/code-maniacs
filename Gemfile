@@ -50,8 +50,11 @@ gem 'thin'
 group :development do
   gem "letter_opener"
   gem 'spring'
-  gem 'capistrano', '2.15.5'
-  gem 'capistrano-ext'
+  gem 'capistrano', '~> 3.2.0'
+  gem 'capistrano-bundler' # for capistrano/bundler
+  gem 'capistrano-rails'
+  gem 'capistrano-rvm'
+  # gem 'capistrano-ext'
   # gem 'capistrano-sidekiq'
-  gem 'rvm-capistrano'
+  # gem 'rvm-capistrano'
 end

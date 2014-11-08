@@ -10,6 +10,10 @@ development:
   <<: *default
   database: code_maniacs_development
 
+production:
+  <<: *default
+  database: code_maniacs_production
+
 # production:
 #   <<: *default
 #   database: rideray_production
