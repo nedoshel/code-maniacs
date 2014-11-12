@@ -27,7 +27,6 @@ $ ->
 
 
   $('html').on 'keypress', (e) ->
-    console.log e.keyCode
     if (e.keyCode == 96) or (e.keyCode == 20 and e.altKey and e.ctrlKey)
       e.preventDefault()
       e.stopPropagation()
@@ -44,13 +43,8 @@ $ ->
     window.history.pushState({}, false, this.href)
     page = 'page' + this.pathname.replace('/', '.')
     $(document).trigger(page)
-    #$('main').typed({strings: [aboutText]})
-    console.log page
     false
 
   $(document).bind 'page.about', ->
     $('main').typed({strings: [aboutText], typingSpeed: 0})
     false
-
-
-
