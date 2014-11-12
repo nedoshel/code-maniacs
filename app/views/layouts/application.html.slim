@@ -2,13 +2,14 @@ doctype html
 html
   head
     title= %Q([ Code, maniacs ])
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-    = javascript_include_tag 'application', 'data-turbolinks-track' => true
-    link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'
+    = stylesheet_link_tag    "application", media: "all"
+    = javascript_include_tag "application"
+    link href="http://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet" type="text/css"
     = csrf_meta_tags
   body
     header
-      h1= %Q([ Code, maniacs ])
+      h1
+        span
       menu
         li
           a href="/about" About
@@ -20,3 +21,5 @@ html
     main
       = yield
     footer
+      .terminal
+      .shadow
