@@ -9,7 +9,7 @@ set :repo_url, 'git@github.com:nedoshel/code-maniacs.git'
 set :deploy_to, '/home/deploy/web/code-maniacs'
 
 set :rvm_type, :user                     # Defaults to: :auto
-set :rvm_ruby_version, '2.1.1'      # Defaults to: 'default'
+set :rvm_ruby_version, '2.1.4'      # Defaults to: 'default'
 # set :rvm_custom_path, '~/.myveryownrvm'  # only needed if not detected
 
 # Default branch is :master
